@@ -11,29 +11,33 @@
     <div class="form">
     <form>
       <select>
-        <option> Choose Size </option>
-        <option> Small </option>
-        <option> Medium </option>
-        <option> Large </option>
+        <option class="size"> Choose Size </option>
+        <option class="size"> Small </option>
+        <option class="size"> Medium </option>
+        <option class="size"> Large </option>
       </select>
       <select>
-        <option> Choose Crust </option>
-        <option> Crispy </option>
-        <option> Stuffed </option>
-        <option> Gluten Free </option>
+        <option class="crust"> Choose Crust </option>
+        <option class="crust"> Crispy </option>
+        <option class="crust"> Stuffed </option>
+        <option class="crust"> Gluten Free </option>
       </select>
       <select>
-        <option> Choose Toppings</option>
-        <option> Beef </option>
-        <option> Chicken </option>
-        <option> Mushrooms </option>
+        <option class="toppings"> Choose Toppings</option>
+        <option class="toppings"> Beef </option>
+        <option class="toppings"> Chicken </option>
+        <option class="toppings"> Mushrooms </option>
       </select>
-      <input type="radio"> Deliver
-      <input type="radio"> Collect
-      <input type="submit" value="Checkout">
+      <select>
+        <option class="deliver"> Delivery</option>
+        <option class="deliver"> Yes</option>
+        <option class="no deliver"> No </option>
+      </select>
+
+      <input type="submit" onclick("pizzaOrder()") value="Checkout">
     </form>
       <div>
-        <p = "total"></p>
+        <p class="total"></p>
       </div>
       </div>
       <p>
