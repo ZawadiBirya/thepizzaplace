@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" type="text/css" rel="stylesheet" >
-  <script src="js/script.js" type="text/javascript">
-  </script>
+  <script src="js/jquery-3.5.1.js"> </script>
+  <script src="js/script.js" type="text/javascript"></script>
   <title>The Pizza Place</title>
   </head>
   <body>
-    <div class="container">
     <h1>The Pizza Place</h1>
-    <div class="form">
-    <form>
-      <select>
-        <option class="size"> Choose Size </option>
-        <option class="size"> Small </option>
-        <option class="size"> Medium </option>
-        <option class="size"> Large </option>
-      </select>
-      <select>
-        <option class="crust"> Choose Crust </option>
-        <option class="crust"> Crispy </option>
-        <option class="crust"> Stuffed </option>
-        <option class="crust"> Gluten Free </option>
-      </select>
-      <select>
-        <option class="toppings"> Choose Toppings</option>
-        <option class="toppings"> Beef </option>
-        <option class="toppings"> Chicken </option>
-        <option class="toppings"> Mushrooms </option>
-      </select>
-      <select>
-        <option class="deliver"> Delivery</option>
-        <option class="deliver"> Yes</option>
-        <option class="no deliver"> No </option>
-      </select>
-
-      <input type="submit" onclick("pizzaOrder()") value="Checkout">
-    </form>
-      <div>
-        <p class="total"></p>
+    <form action="">
+      <div class="col-sm-6  align-items-center justify-content-center">
+        <select class="form-control form-group-sm" id="size">
+          <option>Select size</option>
+          <option id="sm" value="400">small</option>
+          <option id="md" value="800">medium</option>
+          <option id="lg" value="1600">large</option> </br>
+        </select>
+      <select class="form-control" id="crust">
+        <option>Select crust</option>
+          <option id="crispy" value="100">crispy</option>
+          <option id="stuffed" value="200">stuffed</option>
+          <option id="glutenfree" value="300">gluten-free</option> </br>
+        </select>
+    <select class="form-control" id="toppings">
+      <option>Select toppings</option>
+          <option id="mushrooms" value="100">mushrooms</option>
+          <option id="beef" value="200">beef</option>
+          <option id="chicken" value="300">chicken</option> </br>
+        </select>
+          <div class="radio">
+       <label>
+         <input id="deliver" type="radio" name="delivery" value="100" checked>
+         Deliver
+       </label>
+       <label>
+         <input id="collect" type="radio" name="delivery" value="0">
+Collect
+       </label>
+     </div>
+        </select>
+      <label for="submit">Calculate Order</label> </br>
+      <input class="submit" type="submit" value="submit"></br>
+</form>
+Follow us <br>
+<img src="img/fbicon.png" width="50" height="50">
+<img src="img/twittericon.png" width="50" height="50">
+<div class="orderDetails">
+  <p>Thank you for visiting The Pizza Place.</br>
+     You can pay for your order through Mpesa Till: 535353 and we'll get intouch with you.</br>
+     Karibu tena!</p>
+        </div>
       </div>
-      </div>
-      <p>
-        Follow us <br>
-      <img src="img/fbicon.png" width="50" height="50">
-      <img src="img/twittericon.png" width="50" height="50">
-    </p>
-  </div>
+    </div>
     </body>
 </html>
